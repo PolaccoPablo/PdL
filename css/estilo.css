@@ -4,21 +4,21 @@
 }
 
  #bodyIndex{
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 15% 1fr 10% ;
+  grid-template-columns: 25% 1fr 10% ;
   grid-template-rows: 20% 5% 2fr 1fr ;
   grid-template-areas:    
   "titulo titulo titulo"
-  "nav nav nav"
-  "header main main"
-  "footer footer footer" ;
+  "nav main main"
+  "nav main main"
+  "footer footer footer"
+
 }
 
 .containerTitle{
  background:url(../imagenes/galaxy-violet.jpg);
   background-size: cover;
-  /* height: 100px; */
   grid-area: titulo;
 }
 
@@ -53,15 +53,20 @@ nav{
   list-style: none;
   display: flex;  
   justify-content: space-evenly;
-
+  flex-direction: column;
+  padding: inherit;
 }
-
+.navbs{
+  color: rgb(255, 248, 232);
+  
+}
 
 main{
   background-color: rgb(255, 248, 232);
   display: flex;
   flex-direction: column;
   grid-area: main;
+  justify-content: center;
 }
 
 h2{
@@ -107,24 +112,13 @@ a {
 
 /******************************************************************/
 /*********************** productos ********************************/
-/************************************************
-.box2 {
-  background-color: rgb(104, 183, 104);
-  display: inline-block
+/************************************************/
+
+.carousel-item{
+  width: 30%;
+  height: 30%;
 }
 
-.box1 {
-  background-color: blueviolet;
-  color: whitesmoke;
-  list-style-type: circle;
-  display: inline-table;
-  text-align: center
-}
-
-.productos {
-  color: blueviolet;
-}
-******************/
 
 
 /**tips y secretos**/
@@ -140,6 +134,8 @@ a {
 .faq {
   text-align: end;
   margin-right: 20px;
+  height: 60vh;
+
 }
 
 #enviar {
@@ -149,7 +145,7 @@ a {
 
 #cuentanos{
   width: 90%;
-  height: 100%;
+
   align-self: center;
 }
 
@@ -195,4 +191,37 @@ footer .info{
 footer .footerColumns{
   display: flex;
   justify-content: space-around;
+}
+
+#form{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px){
+#bodyIndex{
+
+  grid-template-columns: 25% 1fr 10% ;
+  grid-template-rows: 20% 5% 2fr 1fr ;
+  grid-template-areas:    
+  "titulo titulo titulo"
+  "nav main main"
+  "nav main main"
+  "footer footer footer"
+}  
+}
+
+@media (max-width: 425px){
+
+  #bodyIndex{
+
+    grid-template-columns: 25% 1fr 10% ;
+    grid-template-rows: 20% 20% 2fr 1fr ;
+    grid-template-areas:    
+    "titulo titulo titulo"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+  }  
+
 }
