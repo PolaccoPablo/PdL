@@ -1,0 +1,10 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.cardStyle{
+    width: $card_size;
+    img{
+        @include imagen_size(230px !important, 230px !important);
+    }
+}
