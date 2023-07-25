@@ -1,9 +1,23 @@
 
-  /**FAQ**/
-  .faq {
-    width: 100%;
-    text-align: end;
-    margin-right: 20px;
-    height: auto;
-  
+/**FAQ**/
+.faq {
+  width: 100%;
+  text-align: end;
+  margin-right: 20px;
+  height: auto;
+
+}
+#bodyfaq{
+  background-color: rgb(255, 248, 232);
   }
+  
+#enviar {
+  display: inline;
+  padding-bottom: inherit;
+}
+
+#cuentanos {
+  width: 90%;
+
+  align-self: center;
+}
