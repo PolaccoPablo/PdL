@@ -127,7 +127,9 @@ a {
 }
 
 .up {
-  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  text-align: right;
 }
 
 .imgprod {
@@ -183,6 +185,21 @@ a {
 #cuentanos {
   width: 90%;
   align-self: center;
+}
+
+@media (max-width: 425px) {
+  iframe {
+    width: 251px;
+    height: 261px;
+  }
+  input {
+    width: 99px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1023px) {
+  iframe {
+    width: 385px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

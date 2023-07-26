@@ -2,46 +2,49 @@
 @import "../abstracts/variables";
 
 
-.cardStyle{
-    width: $card_size;
-    img{
-        @include imagen_size(230px !important, 230px !important);
-    }
+.cardStyle {
+  width: $card_size;
+
+  img {
+    @include imagen_size(230px !important, 230px !important);
+  }
 }
 
-.up{
-    text-decoration: none;
-    
+.up {
+
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-align: right;
 }
 
-.imgprod{
-    height: 90vh;
-    padding-left: 28%;
-    align-content: center;
+.imgprod {
+  height: 90vh;
+  padding-left: 28%;
+  align-content: center;
+}
+
+@media (max-width: 2560px) {
+  .imgprod {
+    padding-left: 25%;
   }
-   
-  @media (max-width: 2560px){
-    .imgprod{
-      padding-left: 25%;
-    }
+}
+
+@media (max-width: 1024px) {
+  .imgprod {
+    padding-left: 19%;
   }
-  
-  @media (max-width: 1024px){
-    .imgprod{
-      padding-left: 19%;
-    }
+}
+
+@media(max-width: 768px) {
+  .imgprod {
+    padding-left: 69px;
   }
-  
-  @media(max-width: 768px){
-    .imgprod{
-      padding-left: 69px;
-    }
+}
+
+
+@media (max-width: 426px) {
+  .imgprod {
+    padding-left: 0px;
+    height: 62vh;
   }
-  
-  
-  @media (max-width: 426px){
-    .imgprod{
-      padding-left: 0px;
-      height: 62vh;
-    }
-  }
+}
