@@ -187,6 +187,10 @@ a {
   align-self: center;
 }
 
+.txtcontacto {
+  position: relative;
+}
+
 @media (max-width: 425px) {
   iframe {
     width: 251px;
